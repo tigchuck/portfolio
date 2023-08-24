@@ -1,0 +1,26 @@
+.appBar {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    margin: 0px 0px 25px 0px;
+    padding: 25px 50px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.appBar a {
+    border-radius: 4px;
+    color: #F0EAD6;
+    font-family: 'Abel', sans-serif;
+    font-size: 24px;
+    float: left;
+    line-height: 25px;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.appBar a.logo {
+    font-size: 32px;
+    font-weight: bold;
+    float: right;
+}
