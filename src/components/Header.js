@@ -26,10 +26,11 @@ function Header() {
 
     const list = (
         <Box
-            sx={{ width: 250 }}
+            sx={{ 
+                width: 250,
+            }}
             role="presentation"
             onClick={toggleDrawer(false)}
-            // onKeyDown={toggleDrawer(anchor, false)}
         >
             <List>
                 {tabs.map((tab) => (
@@ -38,6 +39,16 @@ function Header() {
                         href={"/" + tab.toLowerCase()}
                         key={tab} 
                         disablePadding
+                        sx={{
+                            color: "#F0EAD6",
+                            fontFamily: "'Abel', sans-serif",
+                            fontSize: "32px",
+                            float: "right",
+                            lineHeight: "25px",
+                            padding: "16px",
+                            textDecoration: "none",
+                            fontWeight: "bold"   
+                        }}
                     >
                         <ListItemButton>
                             <ListItemText primary={tab} />
@@ -49,7 +60,7 @@ function Header() {
     );
 
     return (
-        <AppBar position="fixed" className="appBar" sx={{backgroundColor: "#1d2951"}}>  
+        <AppBar position="fixed" className="appBar" sx={{ backgroundColor: "#1d2951" }}>  
             <Grid container alignItems="center" justifyContent="center">
                 <Grid 
                     item 
@@ -60,12 +71,12 @@ function Header() {
                     }}
                 >
                     <IconButton
-                    size="large"
-                    aria-label="account of current user"
-                    aria-controls="menu-appbar"
-                    aria-haspopup="true"
-                    onClick={toggleDrawer(true)}
-                    color="inherit"
+                        size="large"
+                        aria-label="account of current user"
+                        aria-controls="menu-appbar"
+                        aria-haspopup="true"
+                        onClick={toggleDrawer(true)}
+                        color="inherit"
                     >
                         <MenuIcon />
                     </IconButton>
@@ -73,6 +84,11 @@ function Header() {
                         anchor="left"
                         open={state}
                         onClose={toggleDrawer(false)}
+                        PaperProps={{
+                            sx: {
+                                backgroundColor: "#1d2951",
+                            }
+                        }}
                     >
                         {list}
                     </Drawer>
@@ -84,6 +100,15 @@ function Header() {
                                     variant="h3"
                                     component="a"
                                     href={"/" + tab.toLowerCase()}
+                                    sx={{
+                                        color: "#F0EAD6",
+                                        fontFamily: "'Abel', sans-serif",
+                                        fontSize: "24px",
+                                        float: "left",
+                                        lineHeight: "25px",
+                                        padding: "16px",
+                                        textDecoration: "none"
+                                    }}
                                 >
                                     {tab}
                                 </Typography>
@@ -95,7 +120,16 @@ function Header() {
                         variant="h1"
                         component="a"
                         href="/" 
-                        className="logo"
+                        sx={{
+                            color: "#F0EAD6",
+                            fontFamily: "'Abel', sans-serif",
+                            fontSize: "32px",
+                            float: "right",
+                            lineHeight: "25px",
+                            padding: "16px",
+                            textDecoration: "none",
+                            fontWeight: "bold"                        
+                        }}
                     >
                         Charlie Tighe
                     </Typography>
