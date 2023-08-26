@@ -2,6 +2,7 @@ import { useState, React } from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Fab from '@mui/material/Fab';
+import emailjs from '@emailjs/browser';
 
 
 const inputFieldValues = [
@@ -29,6 +30,20 @@ const inputFieldValues = [
 
 function Contact() {
 
+    const sendEmail = (e) => {
+        // e.preventDefault();
+        const serviceID = "service_dekc48b";
+        const templateID = "template_4yxmtln";
+        const publicKey = "kFeAhyG8YASUYFeFG";
+
+      emailjs.send(serviceID, templateID, {subject: values.subject, email: values.email, message: values.message}, publicKey)
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+    };
+
     const [values, setValues] = useState({
         email: "",
         subject: "",
@@ -36,7 +51,8 @@ function Contact() {
     });
 
     const handleSubmit = (e) => {
-        e.preventDefault();
+        // e.preventDefault();
+        sendEmail(e);
         alert("Form Submitted");
     }
 
@@ -48,7 +64,7 @@ function Contact() {
 
     return (
         <form
-            onSubmit={handleSubmit}
+            onSubmit={(event) => handleSubmit(event)}
         >
             <Box
             sx={{
@@ -59,7 +75,7 @@ function Contact() {
                 {inputFieldValues.map((inputFieldValue) => {
                     return (
                         <TextField 
-                            onChange={handleChange}
+                            onChange={(event) => handleChange(event)}
                             fullWidth
                             margin="normal"
                             required={inputFieldValue.required ?? false}
