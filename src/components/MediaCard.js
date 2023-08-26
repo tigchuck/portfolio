@@ -7,28 +7,34 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import List from '@mui/material/List';
 import ListItemText from '@mui/material/ListItemText'
+import Box from '@mui/material/Box';
 
 function MediaCard(props) {
 
-    const infoList = props.infoList.map((infoItem) =>
-        <ListItemText 
-            primary={infoItem[0]} 
-            secondary={infoItem[1]} 
-            primaryTypographyProps={{
-                fontFamily: "Abel",
-                color: "#555555"
-            }}
-            secondaryTypographyProps={{
-                fontFamily: "Abel"
-            }}
-        />
-    );
+    const infoList = props.infoList ? (
+        <List>
+            {props.infoList.map((infoItem) =>
+            <ListItemText 
+                primary={infoItem[0]} 
+                secondary={infoItem[1]} 
+                primaryTypographyProps={{
+                    fontFamily: "Abel",
+                    color: "#555555"
+                }}
+                secondaryTypographyProps={{
+                    fontFamily: "Abel"
+                }}
+            />)}
+        </List>
+    ) : null;
+    
 
-    const siteButton = props.site ? (
+
+    const leftButton = props.leftButton ? (
         <Button 
             variant="outlined" 
             size="small" 
-            href={props.hrefSite}
+            href={props.hrefLeft}
             sx={{
                 fontFamily: "Abel",
                 borderColor: "#555555",
@@ -40,15 +46,15 @@ function MediaCard(props) {
                 },
             }}
         >
-            Webpage
+            {props.leftButtonTitle}
         </Button>
     ) : null;
 
-    const patentButton = props.patent ? (
+    const rightButton = props.rightButton ? (
         <Button 
             variant="outlined" 
             size="small" 
-            href={props.hrefPatent}
+            href={props.hrefRight}
             sx={{
                 fontFamily: "Abel",
                 borderColor: "#555555",
@@ -60,7 +66,7 @@ function MediaCard(props) {
                 },
             }}
         >
-            Patent
+            {props.rightButtonTitle}
         </Button>
     ) : null;
 
@@ -80,44 +86,54 @@ function MediaCard(props) {
                 image={props.img}
                 title="Transformer Bar"
             />
-            <CardContent>
-                <Typography 
-                    gutterBottom 
-                    sx={{
-                        fontFamily: "Abel",
-                        fontSize: "24px",
-                        color: "#000",
-                        fontWeight: "bold"
-                    }}
-                >
-                    {props.title}
-                </Typography>
-                <Typography 
-                    gutterBottom 
-                    sx={{
-                        fontFamily: "Abel",
-                        fontSize: "18px",
-                        color: "#000",
-                    }}
-                >
-                    {props.subtitle}
-                </Typography>
-                <List>
-                    {infoList}
-                </List>
-            </CardContent>
-            <CardActions
+            <Box
                 sx={{
+                    height: 250,
                     display: "flex",
-                    justifyContent: "space-between",
-                    alignItems: "end",
-                    padding: "10px 25px 0 25px"
+                    flexDirection: "column",
+                    justifyContent: "space-between"
                 }}
-
             >
-                {siteButton}
-                {patentButton}
-            </CardActions>
+                <CardContent
+                    sx={{
+                        padding: "auto"
+                    }}
+                >
+                    <Typography 
+                        gutterBottom 
+                        sx={{
+                            fontFamily: "Abel",
+                            fontSize: "24px",
+                            color: "#000",
+                            fontWeight: "bold"
+                        }}
+                    >
+                        {props.title}
+                    </Typography>
+                    <Typography 
+                        gutterBottom 
+                        sx={{
+                            fontFamily: "Abel",
+                            fontSize: "18px",
+                            color: "#000",
+                        }}
+                    >
+                        {props.subtitle}
+                    </Typography>
+                    {props.infoList ? infoList : null}
+                </CardContent>
+                <CardActions
+                    sx={{
+                        display: "flex",
+                        flexDirection: "row",
+                        padding: "0 16px 16px 16px",
+                        justifyContent: "space-between"
+                    }}
+                >
+                    {leftButton}
+                    {rightButton}
+                </CardActions>
+            </Box>
         </Card>
     );
 }

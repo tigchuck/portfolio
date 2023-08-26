@@ -43,8 +43,9 @@ function Rogue() {
                     infoList={[
                             ["This product was difficult to manufacture due to extremely tight tolerances and required complex communication with several vendors."]
                     ]}
-                    site="true"
-                    hrefSite="https://www.roguefitness.com/rogue-kabuki-transformer-bar"
+                    leftButton="true"
+                    leftButtonTitle="Webpage"
+                    hrefLeft="https://www.roguefitness.com/rogue-kabuki-transformer-bar"
                 />
             </Grid>
             <Grid 
@@ -67,10 +68,12 @@ function Rogue() {
                     infoList={[
                             ["This product utilizes a novel attachment method between the sleeve and the chassis, creating the potential for a variety of unique specialty bars."]
                     ]}
-                    site="true"
-                    hrefSite="https://www.roguefitness.com/mg-4cn-narrow-multi-grip-camber-bar"
-                    patent="true"
-                    hrefPatent="https://patentimages.storage.googleapis.com/f7/72/0e/f42361a699acf6/US20230241445A1.pdf"
+                    leftButton="true"
+                    leftButtonTitle="Webpage"
+                    hrefLeft="https://www.roguefitness.com/mg-4cn-narrow-multi-grip-camber-bar"
+                    rightButton="true"
+                    rightButtonTitle="Patent"
+                    hrefRight="https://patentimages.storage.googleapis.com/f7/72/0e/f42361a699acf6/US20230241445A1.pdf"
                 />
             </Grid>
             <Grid 
@@ -93,10 +96,12 @@ function Rogue() {
                     infoList={[
                             [""]
                     ]} 
-                    site="true"
-                    hrefSite="https://www.roguefitness.com/rogue-am-2-adjustable-monolift-2-0-monster"
-                    patent="true"
-                    hrefPatent="https://patentimages.storage.googleapis.com/dd/1f/a4/8a7db585872be5/US20230099317A1.pdf"
+                    leftButton="true"
+                    leftButtonTitle="Webpage"
+                    hrefLeft="https://www.roguefitness.com/rogue-am-2-adjustable-monolift-2-0-monster"
+                    rightButton="true"
+                    rightButtonTitle="Patent"
+                    hrefRight="https://patentimages.storage.googleapis.com/dd/1f/a4/8a7db585872be5/US20230099317A1.pdf"
                 />
             </Grid>
             <Grid 
@@ -120,10 +125,12 @@ function Rogue() {
                             ["Test 1"],
                             ["Test 2"]
                     ]}
-                    site="true"
-                    hrefSite="https://www.roguefitness.com/rogue-horizontal-plate-rack-3-0"
-                    patent="true"
-                    hrefPatent="https://patentimages.storage.googleapis.com/b6/b8/34/65b4a1f80ebb4b/USD973793.pdf"
+                    leftButton="true"
+                    leftButtonTitle="Webpage"
+                    hrefLeft="https://www.roguefitness.com/rogue-horizontal-plate-rack-3-0"
+                    rightButton="true"
+                    rightButtonTitle="Patent"
+                    hrefRight="https://patentimages.storage.googleapis.com/b6/b8/34/65b4a1f80ebb4b/USD973793.pdf"
                 />
             </Grid>
             <Grid 
@@ -147,8 +154,9 @@ function Rogue() {
                             ["Test 1"],
                             ["Test 2"]
                     ]}
-                    site="true"
-                    hrefSite="https://www.roguefitness.com/rogue-seal-row-bench"
+                    leftButton="true"
+                    leftButtonTitle="Webpage"
+                    hrefLeft="https://www.roguefitness.com/rogue-seal-row-bench"
                 />
             </Grid>
             <Grid 
@@ -172,8 +180,9 @@ function Rogue() {
                             ["Test 1"],
                             ["Test 2"]
                     ]}
-                    site="true"
-                    hrefSite="https://www.roguefitness.com/monster-lean-to-bar-rack"
+                    leftButton="true"
+                    leftButtonTitle="Webpage"
+                    hrefLeft="https://www.roguefitness.com/monster-lean-to-bar-rack"
                 />
             </Grid>
             <Grid 
@@ -197,10 +206,12 @@ function Rogue() {
                             ["Test 1"],
                             ["Test 2"]
                     ]}
-                    site="true"
-                    hrefSite="https://www.roguefitness.com/monster-bumper-rack"
-                    patent="true"
-                    hrefPatent="https://patentimages.storage.googleapis.com/a2/d6/cd/c3ad93ea40f422/USD988042.pdf"
+                    leftButton="true"
+                    leftButtonTitle="Webpage"
+                    hrefLeft="https://www.roguefitness.com/monster-bumper-rack"
+                    rightButton="true"
+                    rightButtonTitle="Patent"
+                    hrefRight="https://patentimages.storage.googleapis.com/a2/d6/cd/c3ad93ea40f422/USD988042.pdf"
                 />
             </Grid>
             <Grid 
@@ -224,8 +235,9 @@ function Rogue() {
                             ["Test 1"],
                             ["Test 2"]
                     ]}
-                    site="true"
-                    hrefSite="https://www.roguefitness.com/monster-lite-j-cup-pairs-2-sandwich"
+                    leftButton="true"
+                    leftButtonTitle="Webpage"
+                    hrefLeft="https://www.roguefitness.com/monster-lite-j-cup-pairs-2-sandwich"
                 />
             </Grid>
             <Grid 
@@ -248,10 +260,12 @@ function Rogue() {
                     infoList={[
                             ["Test 1"]
                     ]}
-                    site="true"
-                    hrefSite="https://www.roguefitness.com/monster-lite-rack-mount-lat-pulldown-seat-low-row-kit"
-                    patent="true"
-                    hrefPatent="https://patentimages.storage.googleapis.com/04/93/87/04d196d0654e09/USD956893.pdf"
+                    leftButton="true"
+                    leftButtonTitle="Webpage"
+                    hrefLeft="https://www.roguefitness.com/monster-lite-rack-mount-lat-pulldown-seat-low-row-kit"
+                    rightButton="true"
+                    rightButtonTitle="Patent"
+                    hrefRight="https://patentimages.storage.googleapis.com/04/93/87/04d196d0654e09/USD956893.pdf"
                 />
             </Grid>
             <Grid 
@@ -275,10 +289,12 @@ function Rogue() {
                             ["Test 1"],
                             ["Test 2"]
                     ]}
-                    site="true"
-                    hrefSite="https://www.roguefitness.com/monster-hip-thruster-bench"
-                    patent="true"
-                    hrefPatent="https://patentimages.storage.googleapis.com/eb/13/63/e7c6cbfb9d0a5d/USD941941.pdf"
+                    leftButton="true"
+                    leftButtonTitle="Webpage"
+                    hrefLeft="https://www.roguefitness.com/monster-hip-thruster-bench"
+                    rightButton="true"
+                    rightButtonTitle="Patent"
+                    hrefRight="https://patentimages.storage.googleapis.com/eb/13/63/e7c6cbfb9d0a5d/USD941941.pdf"
                 />
             </Grid>
             <Grid 
@@ -302,8 +318,9 @@ function Rogue() {
                             ["Test 1"],
                             ["Test 2"]
                     ]}
-                    site="true"
-                    hrefSite="https://www.roguefitness.com/monster-lean-to-bar-rack"
+                    leftButton="true"
+                    leftButtonTitle="Webpage"
+                    hrefLeft="https://www.roguefitness.com/monster-lean-to-bar-rack"
                 />
             </Grid>
             <Grid 
@@ -327,10 +344,12 @@ function Rogue() {
                             ["Test 1"],
                             ["Test 2"]
                     ]}
-                    site="true"
-                    hrefSite="https://www.roguefitness.com/rogue-monster-lite-slinger"
-                    patent="true"
-                    hrefPatent="https://patentimages.storage.googleapis.com/04/9a/ff/9c461a9aa74ab3/US20220072361A1.pdf"
+                    leftButton="true"
+                    leftButtonTitle="Webpage"
+                    hrefLeft="https://www.roguefitness.com/rogue-monster-lite-slinger"
+                    rightButton="true"
+                    rightButtonTitle="Patent"
+                    hrefRight="https://patentimages.storage.googleapis.com/04/9a/ff/9c461a9aa74ab3/US20220072361A1.pdf"
                 />
             </Grid>
             <Grid 
@@ -354,8 +373,9 @@ function Rogue() {
                             ["Test 1"],
                             ["Test 2"]
                     ]}
-                    site="true"
-                    hrefSite="https://www.roguefitness.com/rogue-powerblock-cart"
+                    leftButton="true"
+                    leftButtonTitle="Webpage"
+                    hrefLeft="https://www.roguefitness.com/rogue-powerblock-cart"
                 />
             </Grid>
         </Grid>

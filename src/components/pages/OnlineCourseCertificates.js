@@ -6,6 +6,7 @@ import ucsc from "../../pictures/UCSC.png";
 import huj from "../../pictures/HUJ.png";
 import ucsd from "../../pictures/UCSD.jpeg";
 import imperialCollege from "../../pictures/ImperialCollege.jpeg";
+import gt from "../../pictures/GeorgiaTech.png";
 
 function OnlineCourseCertificates() {
     return (
@@ -28,17 +29,87 @@ function OnlineCourseCertificates() {
                 xl={3}
             >
                 <MediaCard
+                    title="Data Structures and Algorithms"
+                    subtitle="Georgia Institute of Technology"
+                    img={gt}
+                    alt="Georgia Tech"
+                    imgBorderRadius="10px"
+                    padding="16px"
+                    leftButton="true"
+                    leftButtonTitle="Certificate"
+                    hrefLeft="https://credentials.edx.org/credentials/77155e3c63d344ae821ccb233375cdaf/"
+                />
+            </Grid>
+            <Grid 
+                item                
+                sx={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                }}
+                xs={12}
+                md={6}
+                lg={4}
+                xl={3}
+            >
+                <MediaCard
+                    title="Introduction to Object-Oriented Programming with Java"
+                    subtitle="Georgia Institure of Technology"
+                    img={gt}
+                    alt="Georgia Tech"
+                    imgBorderRadius="10px"
+                    padding="16px"
+                    leftButton="true"
+                    leftButtonTitle="Certificate"
+                    hrefLeft="https://credentials.edx.org/credentials/3ad10aee12834f1a9c24c634530896db/"
+                />
+            </Grid>
+            <Grid 
+                item                
+                sx={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                }}
+                xs={12}
+                md={6}
+                lg={4}
+                xl={3}
+            >
+                <MediaCard
+                    title="Introduction to Python Programming"
+                    subtitle="Georgia Institure of Technology"
+                    img={gt}
+                    alt="Georgia Tech"
+                    imgBorderRadius="10px"
+                    padding="16px"
+                    leftButton="true"
+                    leftButtonTitle="Certificate"
+                    hrefLeft="https://credentials.edx.org/credentials/6f63b9d0d2c345df97f1bd976c0ab6f7/"
+                />
+            </Grid>
+            <Grid 
+                item                
+                sx={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                }}
+                xs={12}
+                md={6}
+                lg={4}
+                xl={3}
+            >
+                <MediaCard
                     title="Databases for Data Scientists"
                     subtitle="University of Colorado Boulder"
                     img={colorado}
                     alt="Colorado"
                     imgBorderRadius="10px"
                     padding="16px"
-                    infoList={[
-                            [""]
-                    ]}
-                    site="true"
-                    hrefSite="https://www.roguefitness.com/rogue-kabuki-transformer-bar"
+                    leftButton="true"
+                    leftButtonTitle="Certificate"
+                    hrefLeft="https://www.coursera.org/account/accomplishments/specialization/certificate/P9ABSGKBZ7PE"
                 />
             </Grid>
             <Grid 
@@ -60,11 +131,9 @@ function OnlineCourseCertificates() {
                     alt="UCSC"
                     imgBorderRadius="10px"
                     padding="16px"
-                    infoList={[
-                            [""]
-                    ]}
-                    site="true"
-                    hrefSite="https://www.coursera.org/account/accomplishments/specialization/certificate/MWXVGTURJXFY
+                    leftButton="true"
+                    leftButtonTitle="Certificate"
+                    hrefLeft="https://www.coursera.org/account/accomplishments/specialization/certificate/MWXVGTURJXFY
 "
                 />
             </Grid>
@@ -87,11 +156,9 @@ function OnlineCourseCertificates() {
                     alt="HUJ"
                     imgBorderRadius="10px"
                     padding="16px"
-                    infoList={[
-                            [""]
-                    ]}
-                    site="true"
-                    hrefSite="https://www.coursera.org/account/accomplishments/certificate/6CLYMPYQGUFY"
+                    leftButton="true"
+                    leftButtonTitle="Certificate"
+                    hrefLeft="https://www.coursera.org/account/accomplishments/certificate/6CLYMPYQGUFY"
                 />
             </Grid>
             <Grid 
@@ -113,11 +180,9 @@ function OnlineCourseCertificates() {
                     alt="UCSD"
                     imgBorderRadius="10px"
                     padding="16px"
-                    infoList={[
-                            [""]
-                    ]}
-                    site="true"
-                    hrefSite="https://www.coursera.org/account/accomplishments/specialization/certificate/3G5FNXFCGNRD"
+                    leftButton="true"
+                    leftButtonTitle="Certificate"
+                    hrefLeft="https://www.coursera.org/account/accomplishments/specialization/certificate/3G5FNXFCGNRD"
                 />
             </Grid>
             <Grid 
@@ -139,11 +204,9 @@ function OnlineCourseCertificates() {
                     alt="Imperial College London"
                     imgBorderRadius="10px"
                     padding="16px"
-                    infoList={[
-                            [""]
-                    ]}
-                    site="true"
-                    hrefSite="https://www.coursera.org/account/accomplishments/specialization/certificate/WWG7U4XM24TE"
+                    leftButton="true"
+                    leftButtonTitle="Certificate"
+                    hrefLeft="https://www.coursera.org/account/accomplishments/specialization/certificate/WWG7U4XM24TE"
                 />
             </Grid>
         </Grid>
