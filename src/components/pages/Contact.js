@@ -65,12 +65,15 @@ function Contact() {
     return (
         <form
             onSubmit={(event) => handleSubmit(event)}
+            style={{
+                backgroundColor: "#F7F4EA"
+            }}
         >
             <Box
-            sx={{
-                width: 500,
-                maxWidth: "100%",
-            }}
+                sx={{
+                    width: 500,
+                    maxWidth: "100%",
+                }}
             >
                 {inputFieldValues.map((inputFieldValue) => {
                     return (
