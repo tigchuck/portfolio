@@ -3,6 +3,7 @@ import Grid from '@mui/material/Grid';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import Section from "../Section";
 import hex from "../../pictures/Hex.png";
+import reactLogo from "../../pictures/ReactLogo.png";
 
 
 function Projects() {
@@ -13,6 +14,33 @@ function Projects() {
         justifyContent="flex-start" 
         spacing={5}
     >
+        <Grid 
+            item                
+            sx={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                width: 1
+            }}
+        >
+            <Section
+                title="This Website!"
+                subtitle="A ReactJS Web App"
+                img={reactLogo}
+                alt="This Website"
+                imgBorderRadius="10px"
+                imgWidth="0.8"
+                infoList={[
+                        ["Written in Javascript, HTML, and CSS.", ""],
+                        ["Used ReactJS framework along with the Material UI component library.", ""],
+                        ["Uses the EmailJS library to securely send emails from the form on the Contact page.", ""],
+                ]}
+                link="true"
+                linkIcon=<GitHubIcon sx={{ mr: 2 }}/>
+                linkText="Repo"
+                href="https://github.com/tigchuck/portfolio"
+            />
+        </Grid>
         <Grid 
             item                
             sx={{
