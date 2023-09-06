@@ -64,7 +64,7 @@ function Home() {
                     <Grid item>
                         <Button 
                             linkText="Contact Me!"
-                            href="/contact"
+                            href="/portfolio/contact"
                             elevation="5"
                             backgroundColor="#1d2951"
                             color="#F0EAD6"

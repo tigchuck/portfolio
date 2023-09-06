@@ -1,5 +1,5 @@
 import React from 'react';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './Header';
 import HeaderBlock from './HeaderBlock';
 import Footer from './Footer';
@@ -12,43 +12,23 @@ import Rogue from './pages/Rogue';
 import OnlineCourseCertificates from './pages/OnlineCourseCertificates';
 import '../styles/App.css';
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Home />
-  },
-  {
-    path: "/contact",
-    element: <Contact />
-  },
-  {
-    path: "/education",
-    element: <Education />
-  },
-  {
-    path: "/experience",
-    element: <Experience />
-  },
-  {
-    path: "/projects",
-    element: <Projects />
-  },
-  {
-    path: "/rogue-fitness",
-    element: <Rogue />
-  },
-  {
-    path: "/online-course-certificates",
-    element: <OnlineCourseCertificates />
-  }
-]);
 
 function App() {
   return (
     <div>
       <Header />
       <HeaderBlock />
-      <RouterProvider router={router} />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/portfolio" element={<Home />}></Route>
+          <Route path="/portfolio/contact" element={<Contact />}></Route>
+          <Route path="/portfolio/education" element={<Education />}></Route>
+          <Route path="/portfolio/experience" element={<Experience />}></Route>
+          <Route path="/portfolio/projects" element={<Projects />}></Route>
+          <Route path="/portfolio/rogue-fitness" element={<Rogue />}></Route>
+          <Route path="/portfolio/online-course-certificates" element={<OnlineCourseCertificates />}></Route>
+        </Routes>
+      </BrowserRouter>
       <Footer />
     </div>
   );

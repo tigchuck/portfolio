@@ -37,7 +37,7 @@ function Experience() {
                 ]}
                 link="true"
                 linkText="View Projects"
-                href="/rogue-fitness"
+                href="/portfolio/rogue-fitness"
             />
         </Grid>
         <Grid

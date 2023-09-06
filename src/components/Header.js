@@ -36,7 +36,7 @@ function Header() {
                 {tabs.map((tab) => (
                     <ListItem 
                         component="a"
-                        href={"/" + tab.toLowerCase()}
+                        href={"/portfolio/" + tab.toLowerCase()}
                         key={tab} 
                         disablePadding
                         sx={{
@@ -99,7 +99,7 @@ function Header() {
                                 <Typography 
                                     variant="h3"
                                     component="a"
-                                    href={"/" + tab.toLowerCase()}
+                                    href={"/portfolio/" + tab.toLowerCase()}
                                     sx={{
                                         color: "#F0EAD6",
                                         fontFamily: "'Abel', sans-serif",
@@ -119,7 +119,7 @@ function Header() {
                     <Typography 
                         variant="h1"
                         component="a"
-                        href="/" 
+                        href="/portfolio" 
                         sx={{
                             color: "#F0EAD6",
                             fontFamily: "'Abel', sans-serif",

@@ -94,7 +94,7 @@ function Rogue() {
                     alt="Rogue Adjustable Monolift 2.0"
                     imgBorderRadius="10px"
                     infoList={[
-                            [""]
+                            ["A lightweight and robust adjustable monolift with a unique arm locking mechanism."]
                     ]} 
                     leftButton="true"
                     leftButtonTitle="Webpage"
@@ -122,8 +122,7 @@ function Rogue() {
                     alt="Rogue Horizontal Plate Rack 3.0"
                     imgBorderRadius="10px"
                     infoList={[
-                            ["Test 1"],
-                            ["Test 2"]
+                            ["Horizontal plate storage with easily removable dividers for quick customization based on a user's individual weight set."],
                     ]}
                     leftButton="true"
                     leftButtonTitle="Webpage"
@@ -151,8 +150,7 @@ function Rogue() {
                     alt="Rogue Seal Row Bench"
                     imgBorderRadius="10px"
                     infoList={[
-                            ["Test 1"],
-                            ["Test 2"]
+                            ["A simple and strong seal row bench designed for use in both home gyms, as well as more well outfitted athletic facilities."]
                     ]}
                     leftButton="true"
                     leftButtonTitle="Webpage"
@@ -177,8 +175,7 @@ function Rogue() {
                     alt="Lean-To Bar Rack"
                     imgBorderRadius="10px"
                     infoList={[
-                            ["Test 1"],
-                            ["Test 2"]
+                            ["Customizable bar storage designed for quick and easy access to a wide variety of potential bars."]
                     ]}
                     leftButton="true"
                     leftButtonTitle="Webpage"
@@ -203,8 +200,7 @@ function Rogue() {
                     alt="Monster Bumper Rack"
                     imgBorderRadius="10px"
                     infoList={[
-                            ["Test 1"],
-                            ["Test 2"]
+                            ["This product is a storage unit using the same removeable dividers as the Horizontal Plate Rack 3.0. This design includes space to store pull blocks commonly used for Olympic Weightlifting."]
                     ]}
                     leftButton="true"
                     leftButtonTitle="Webpage"
@@ -232,8 +228,7 @@ function Rogue() {
                     alt="Sandwich J-Cups"
                     imgBorderRadius="10px"
                     infoList={[
-                            ["Test 1"],
-                            ["Test 2"]
+                            ["An updated design to Rogue's already popular Sandwich J-Cups include flush hardware and plastic which covers all sharp edges of metal."]
                     ]}
                     leftButton="true"
                     leftButtonTitle="Webpage"
@@ -258,7 +253,7 @@ function Rogue() {
                     alt="Lat Pulldown Seat and Low Row Kit"
                     imgBorderRadius="10px"
                     infoList={[
-                            ["Test 1"]
+                            ["These products are meant allow exercises commonly done in commercial gyms to be done at home without requiring large amounts of space."]
                     ]}
                     leftButton="true"
                     leftButtonTitle="Webpage"
@@ -286,8 +281,7 @@ function Rogue() {
                     alt="Hip Thruster Bench"
                     imgBorderRadius="10px"
                     infoList={[
-                            ["Test 1"],
-                            ["Test 2"]
+                            ["A rack attachment meant to allow the user to comfortably perform hip thrusters at home."]
                     ]}
                     leftButton="true"
                     leftButtonTitle="Webpage"
@@ -315,12 +309,11 @@ function Rogue() {
                     alt="Monster Lite Competition Bench"
                     imgBorderRadius="10px"
                     infoList={[
-                            ["Test 1"],
-                            ["Test 2"]
+                            ["A simple, but robust bench meanth to be used in both home gyms and commercial gym settings."]
                     ]}
                     leftButton="true"
                     leftButtonTitle="Webpage"
-                    hrefLeft="https://www.roguefitness.com/monster-lean-to-bar-rack"
+                    hrefLeft="https://www.roguefitness.com/rogue-monster-lite-competition-bench"
                 />
             </Grid>
             <Grid 
@@ -341,8 +334,7 @@ function Rogue() {
                     alt="Rogue Slinger"
                     imgBorderRadius="10px"
                     infoList={[
-                            ["Test 1"],
-                            ["Test 2"]
+                            ["A rack attachment meant to allow home gym owners access to simple cable movements."]
                     ]}
                     leftButton="true"
                     leftButtonTitle="Webpage"
@@ -370,8 +362,7 @@ function Rogue() {
                     alt="Rogue Powerblock Cart"
                     imgBorderRadius="10px"
                     infoList={[
-                            ["Test 1"],
-                            ["Test 2"]
+                            ["This product is a home gym storage option meant for PowerBlocks of any weight, along with a variety of other equipment."]
                     ]}
                     leftButton="true"
                     leftButtonTitle="Webpage"
