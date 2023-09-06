@@ -2,6 +2,8 @@ import { useState, React } from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Fab from '@mui/material/Fab';
+import Grid from '@mui/material/Grid';
+import Typography from '@mui/material/Typography';
 import emailjs from '@emailjs/browser';
 
 
@@ -63,52 +65,89 @@ function Contact() {
     }
 
     return (
-        <form
-            onSubmit={(event) => handleSubmit(event)}
-            style={{
-                backgroundColor: "#F7F4EA"
-            }}
+        <Grid 
+            container
+            flexDirection="column"
+            spacing={5}
+            paddingTop="32px"
+            alignItems="center"
         >
-            <Box
-                sx={{
-                    width: 500,
-                    maxWidth: "100%",
-                }}
-            >
-                {inputFieldValues.map((inputFieldValue) => {
-                    return (
-                        <TextField 
-                            onChange={(event) => handleChange(event)}
-                            fullWidth
-                            margin="normal"
-                            required={inputFieldValue.required ?? false}
-                            multiline={inputFieldValue.multiline ?? false}
-                            rows={inputFieldValue.rows ?? 1} 
-                            label={inputFieldValue.label}
-                            id={inputFieldValue.id}
-                            value={
-                                inputFieldValue.id === "message" ? values.message :
-                                    inputFieldValue.id === "email" ? values.email :
-                                    values.subject
-                            }
-                        />
-                    );
-                })}
-                <Fab
-                    type="submit"
-                    variant="extended"
+            <Grid item>
+                <Typography
                     sx={{
                         fontFamily: "Abel",
-                        fontSize: "16px",
-                        margin: "32px auto",
-                        display: "flex",
-                        width: "0.25"
-                        }}
+                        fontSize: "32px",
+                        lineHeight: "64px",
+                        fontWeight: "900",
+                        lineWeight: "bold",
+                        textAlign: "center"
+                    }}
                 >
-                    Submit
-                </Fab>
-            </Box>
-        </form>
+                    For questions about my background or hiring inquiries, 
+                </Typography>
+                <Typography
+                    sx={{
+                        fontFamily: "Abel",
+                        fontSize: "32px",
+                        lineHeight: "64px",
+                        fontWeight: "900",
+                        lineWeight: "bold",
+                        textAlign: "center",
+                    }}
+                >
+                    please reach out to me using the form below.
+                </Typography>
+            </Grid>
+            <Grid item>
+                <form
+                    onSubmit={(event) => handleSubmit(event)}
+                    style={{
+                        backgroundColor: "#F7F4EA"
+                    }}
+                >
+                    <Box
+                        sx={{
+                            width: 500,
+                            maxWidth: "100%",
+                            backgroundColor: "#F7F4EA"
+                        }}
+                    >
+                        {inputFieldValues.map((inputFieldValue) => {
+                            return (
+                                <TextField 
+                                    onChange={(event) => handleChange(event)}
+                                    fullWidth
+                                    margin="normal"
+                                    required={inputFieldValue.required ?? false}
+                                    multiline={inputFieldValue.multiline ?? false}
+                                    rows={inputFieldValue.rows ?? 1} 
+                                    label={inputFieldValue.label}
+                                    id={inputFieldValue.id}
+                                    value={
+                                        inputFieldValue.id === "message" ? values.message :
+                                            inputFieldValue.id === "email" ? values.email :
+                                            values.subject
+                                    }
+                                />
+                            );
+                        })}
+                        <Fab
+                            type="submit"
+                            variant="extended"
+                            sx={{
+                                fontFamily: "Abel",
+                                fontSize: "16px",
+                                margin: "32px auto",
+                                display: "flex",
+                                width: "0.25"
+                                }}
+                        >
+                            Submit
+                        </Fab>
+                    </Box>
+                </form>
+            </Grid>
+        </Grid>
     );
 }
 

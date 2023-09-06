@@ -3,7 +3,10 @@ import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Slide from '@mui/material/Slide';
 import Grow from '@mui/material/Grow';
-// import Fade from '@mui/material/Fade';
+import CardMedia from '@mui/material/CardMedia';
+import Paper from '@mui/material/Paper';
+import charlie from "../pictures/CharliePicture.jpeg";
+
 
 
 
@@ -24,7 +27,7 @@ function FunName() {
             flexDirection="column"
             spacing={6}
             sx={{
-                // maxWidth: { xs: "0.8", md: "0.4" },
+                alignItems: {xs: 'center', lg: 'start'},
             }}
         >
             <Grid item>
@@ -46,7 +49,7 @@ function FunName() {
                             <Typography
                                 sx={{
                                     fontFamily: "Abel",
-                                    fontSize: "64px",
+                                    fontSize: {xs: '48px', md: "64px"},
                                     lineHeight: "48px",
                                     fontWeight: "900",
                                     lineWeight: "bold",
@@ -56,7 +59,6 @@ function FunName() {
                                 Hi, I'm
                             </Typography>
                         </Grow>
-
                     </Grid>
                     <Grid item>
                         <Grow 
@@ -71,7 +73,7 @@ function FunName() {
                             <Typography
                                 sx={{
                                     fontFamily: "Abel",
-                                    fontSize: "80px",
+                                    fontSize: {xs: '64px', md: "80px"},
                                     lineHeight: "48px",
                                     fontWeight: "900",
                                     lineWeight: "extra-bold",
@@ -83,6 +85,16 @@ function FunName() {
                         </Grow>
                     </Grid>
                 </Grid>
+            </Grid>
+            <Grid 
+                item
+                sx={{
+                    display: {xs: 'flex', lg: 'none'}
+                }}
+            >
+                <Paper img={charlie} elevation={10} sx={{borderRadius: "50%"}}>
+                    <CardMedia component="img" image={charlie} sx={{borderRadius: "50%"}} />
+                </Paper>
             </Grid>
             <Grid item>
                 <Grid container direction="column" spacing={2}>
@@ -100,7 +112,7 @@ function FunName() {
                             <Typography
                                 sx={{
                                     fontFamily: "Abel",
-                                    fontSize: "32px",
+                                    fontSize: {xs: '24px', md: "32px"},
                                     lineHeight: "48px",
                                     fontWeight: "900",
                                     lineWeight: "bold",
@@ -124,7 +136,7 @@ function FunName() {
                             <Typography
                                 sx={{
                                     fontFamily: "Abel",
-                                    fontSize: "32px",
+                                    fontSize: {xs: '24px', md: "32px"},
                                     lineHeight: "48px",
                                     fontWeight: "900",
                                     lineWeight: "bold",
@@ -145,7 +157,7 @@ function FunName() {
                             <Typography
                                 sx={{
                                     fontFamily: "Abel",
-                                    fontSize: "32px",
+                                    fontSize: {xs: '24px', md: "32px"},
                                     lineHeight: "48px",
                                     fontWeight: "900",
                                     lineWeight: "bold",

@@ -5,7 +5,7 @@ import List from '@mui/material/List';
 import ListItemText from '@mui/material/ListItemText';
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
-import Fab from '@mui/material/Fab';
+import Button from "./Button";
 
 function Section(props) {
     const infoList = props.infoList.map((infoItem) =>
@@ -25,20 +25,12 @@ function Section(props) {
     );
 
     const linkButton = props.link ? (
-        <Fab
-            variant="extended"
+        <Button
+            linkText={props.linkText}
+            linkIcon={props.linkIcon}
             href={props.href}
-            sx={{
-                fontFamily: "Abel",
-                fontSize: "16px",
-                margin: "32px auto",
-                display: "flex",
-                width: "0.25",
-                minWidth: "250px"
-            }}
-        >
-            {props.linkIcon}{props.linkText}
-        </Fab>
+            minWidth="250px"
+        />
     ) : null;
 
     return (

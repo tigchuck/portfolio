@@ -18,18 +18,38 @@ function Home() {
             <Grid item>
                 <Grid
                     container
-                    flexDirection="row"
+                    flexDirection={{xs: "column", lg: "row"}}
+                    spacing={5}
                     justifyContent="space-around"
                     alignItems="center"
                     sx={{
                         padding: "50px"
                     }}
                 >
-                    <Grid item>
+                    <Grid 
+                        item
+                        sx={{
+                            width: {xs: '100%', lg: '70%'}
+                        }}
+                    >
                         <FunName />
                     </Grid>
-                    <Grid item sx={{borderRadius: "25px"}}>
-                        <Paper img={charlie} elevation={10} sx={{borderRadius: "50%"}}>
+                    <Grid 
+                        item 
+                        sx={{
+                            display: {xs: 'none', lg: 'flex'},
+                            width: "30%",
+                            borderRadius: "25px"
+                        }}
+                    >
+                        <Paper 
+                            img={charlie} 
+                            elevation={10} 
+                            sx={{
+                                display: {xs: 'none', lg: 'flex'},
+                                borderRadius: "50%"
+                                }}
+                            >
                             <CardMedia component="img" image={charlie} sx={{borderRadius: "50%"}} />
                         </Paper>
                     </Grid>
