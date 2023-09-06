@@ -1,4 +1,5 @@
 import { useState, React } from 'react';
+import { HashRouter, BrowserRouter, Routes, Route, NavLink } from 'react-router-dom';
 import AppBar from '@mui/material/AppBar';
 import Grid from '@mui/material/Grid';
 import Toolbar from '@mui/material/Toolbar';
@@ -34,26 +35,27 @@ function Header() {
         >
             <List>
                 {tabs.map((tab) => (
-                    <ListItem 
-                        component="a"
-                        href={"/portfolio/" + tab.toLowerCase()}
-                        key={tab} 
-                        disablePadding
-                        sx={{
-                            color: "#F0EAD6",
-                            fontFamily: "'Abel', sans-serif",
-                            fontSize: "32px",
-                            float: "right",
-                            lineHeight: "25px",
-                            padding: "16px",
-                            textDecoration: "none",
-                            fontWeight: "bold"   
-                        }}
-                    >
-                        <ListItemButton>
-                            <ListItemText primary={tab} />
-                        </ListItemButton>
-                    </ListItem>
+                    <NavLink to={tab.toLowerCase()}>
+                        <ListItem 
+                            component="a"
+                            key={tab} 
+                            disablePadding
+                            sx={{
+                                color: "#F0EAD6",
+                                fontFamily: "'Abel', sans-serif",
+                                fontSize: "32px",
+                                float: "right",
+                                lineHeight: "25px",
+                                padding: "16px",
+                                textDecoration: "none",
+                                fontWeight: "bold"   
+                            }}
+                        >
+                            <ListItemButton>
+                                <ListItemText primary={tab} />
+                            </ListItemButton>
+                        </ListItem>
+                    </NavLink>
                 ))}
             </List>
         </Box>
@@ -96,10 +98,10 @@ function Header() {
                 <Grid item xs={6} sx={{display: { xs: 'none', md: 'flex' }}}>
                     <Toolbar>
                         {tabs.map((tab) => (
+                            <NavLink to={tab.toLowerCase()}>
                                 <Typography 
                                     variant="h3"
                                     component="a"
-                                    href={"/portfolio/" + tab.toLowerCase()}
                                     sx={{
                                         color: "#F0EAD6",
                                         fontFamily: "'Abel', sans-serif",
@@ -112,27 +114,29 @@ function Header() {
                                 >
                                     {tab}
                                 </Typography>
+                            </NavLink>
                         ))}
                     </Toolbar>
                 </Grid>
                 <Grid item xs={6}>
-                    <Typography 
-                        variant="h1"
-                        component="a"
-                        href="/portfolio" 
-                        sx={{
-                            color: "#F0EAD6",
-                            fontFamily: "'Abel', sans-serif",
-                            fontSize: "32px",
-                            float: "right",
-                            lineHeight: "25px",
-                            padding: "16px",
-                            textDecoration: "none",
-                            fontWeight: "bold"                        
-                        }}
-                    >
-                        Charlie Tighe
-                    </Typography>
+                    <NavLink to="/">
+                        <Typography 
+                            variant="h1"
+                            component="a"
+                            sx={{
+                                color: "#F0EAD6",
+                                fontFamily: "'Abel', sans-serif",
+                                fontSize: "32px",
+                                float: "right",
+                                lineHeight: "25px",
+                                padding: "16px",
+                                textDecoration: "none",
+                                fontWeight: "bold"                        
+                            }}
+                        >
+                            Charlie Tighe
+                        </Typography>
+                    </NavLink>
                 </Grid>
             </Grid>  
         </AppBar>

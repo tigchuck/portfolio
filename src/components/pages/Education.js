@@ -79,7 +79,7 @@ function Education() {
                     ]}
                     link="true"
                     linkText="View Certificates"
-                    href="/portfolio/online-course-certificates"
+                    href="/online-course-certificates"
                 />
             </Grid>
         </Grid>

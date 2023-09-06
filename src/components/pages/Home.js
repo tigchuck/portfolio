@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import Grid from '@mui/material/Grid';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -62,15 +63,22 @@ function Home() {
                     paddingTop="64px"
                 >
                     <Grid item>
-                        <Button 
-                            linkText="Contact Me!"
-                            href="/portfolio/contact"
-                            elevation="5"
-                            backgroundColor="#1d2951"
-                            color="#F0EAD6"
-                            hoverBackgroundColor="#2a3c77"
-                            minWidth="250px"
-                        />
+                        <NavLink 
+                            to="/contact"
+                            style={{
+                                textDecoration: 'none'
+                            }}
+                        >
+                            <Button 
+                                linkText="Contact Me!"
+                                href="/contact"
+                                elevation="5"
+                                backgroundColor="#1d2951"
+                                color="#F0EAD6"
+                                hoverBackgroundColor="#2a3c77"
+                                minWidth="250px"
+                            />
+                        </NavLink>
                     </Grid>
                     <Grid item>
                         <Grid 

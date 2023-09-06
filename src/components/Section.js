@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import Box from '@mui/system/Box';
 import Grid from '@mui/material/Grid';
 import List from '@mui/material/List';
@@ -25,12 +26,18 @@ function Section(props) {
     );
 
     const linkButton = props.link ? (
-        <Button
-            linkText={props.linkText}
-            linkIcon={props.linkIcon}
-            href={props.href}
-            minWidth="250px"
-        />
+        <NavLink 
+            to={props.href}
+            style={{
+                textDecoration: 'none'
+            }}
+        >
+            <Button
+                linkText={props.linkText}
+                linkIcon={props.linkIcon}
+                minWidth="250px"
+            />
+        </NavLink>
     ) : null;
 
     return (

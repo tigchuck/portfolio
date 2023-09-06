@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Header from './Header';
 import HeaderBlock from './HeaderBlock';
 import Footer from './Footer';
@@ -12,23 +12,42 @@ import Rogue from './pages/Rogue';
 import OnlineCourseCertificates from './pages/OnlineCourseCertificates';
 import '../styles/App.css';
 
+// const router = createHashRouter([
+//   {
+//     path: "/",
+//     element: <Home />,
+//     children: [
+//       {
+//         path: "/contact/", 
+//         element: <Contact />,
+//       },
+//       {
+//         path: "/education",
+//         element: <Education />
+//       },
+//       {
+//         path: "/experience",
+//         element: <Experience />
+//       }
+//     ],
+//   }
+// ]);
+
 
 function App() {
   return (
     <div>
       <Header />
       <HeaderBlock />
-      <BrowserRouter>
         <Routes>
-          <Route path="/portfolio" element={<Home />}></Route>
-          <Route path="/portfolio/contact" element={<Contact />}></Route>
-          <Route path="/portfolio/education" element={<Education />}></Route>
-          <Route path="/portfolio/experience" element={<Experience />}></Route>
-          <Route path="/portfolio/projects" element={<Projects />}></Route>
-          <Route path="/portfolio/rogue-fitness" element={<Rogue />}></Route>
-          <Route path="/portfolio/online-course-certificates" element={<OnlineCourseCertificates />}></Route>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="contact" element={<Contact />} />
+          <Route exact path="education" element={<Education />} />
+          <Route exact path="experience" element={<Experience />} />
+          <Route exact path="projects" element={<Projects />} />
+          <Route exact path="rogue-fitness" element={<Rogue />} />
+          <Route exact path="online-course-certificates" element={<OnlineCourseCertificates />} />
         </Routes>
-      </BrowserRouter>
       <Footer />
     </div>
   );
