@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.f9e1a03e.css",
+    "main.js": "/portfolio/static/js/main.c1e4f146.js",
+    "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/PowerblockCart.png": "/portfolio/static/media/PowerblockCart.17037fcac91c624486a9.png",
+    "static/media/HipThruster.png": "/portfolio/static/media/HipThruster.a0e371515af3557b7c38.png",
+    "static/media/BumperRack.png": "/portfolio/static/media/BumperRack.a6838173bca941c53cca.png",
+    "static/media/HorizontalPlateRack.png": "/portfolio/static/media/HorizontalPlateRack.3b55714d6c9380ea2f3d.png",
+    "static/media/LeanToBarRack.png": "/portfolio/static/media/LeanToBarRack.dd6653b323b2dc0bf6b5.png",
+    "static/media/SealRowBench.png": "/portfolio/static/media/SealRowBench.535489d0ff09d7f82bf5.png",
+    "static/media/slinger.png": "/portfolio/static/media/slinger.0b0e2499e843595e3259.png",
+    "static/media/Monolift.png": "/portfolio/static/media/Monolift.87727eeb9514b12b9bb5.png",
+    "static/media/LatPulldownSeat.png": "/portfolio/static/media/LatPulldownSeat.8e93808640bb57eebab8.png",
+    "static/media/CompBench.png": "/portfolio/static/media/CompBench.eff8574da57402bfe2d4.png",
+    "static/media/SandwichJCups.png": "/portfolio/static/media/SandwichJCups.385aeafbb0b8b625de11.png",
+    "static/media/MG4.png": "/portfolio/static/media/MG4.dd43ee7872dd7f2dedb9.png",
+    "static/media/OnlineCourses.jpeg": "/portfolio/static/media/OnlineCourses.0f30a82b10eb4bd77819.jpeg",
+    "static/media/CrookedCan.png": "/portfolio/static/media/CrookedCan.ae5843f7f0dd68b6e565.png",
+    "static/media/GeorgiaTech.png": "/portfolio/static/media/GeorgiaTech.d6bae2675e6a7cbb75ad.png",
+    "static/media/UCSD.jpeg": "/portfolio/static/media/UCSD.8b258ee4222a07572b69.jpeg",
+    "static/media/Colorado.png": "/portfolio/static/media/Colorado.8af341dba98a00e9691d.png",
+    "static/media/ReactLogo.png": "/portfolio/static/media/ReactLogo.e648a71158884495e955.png",
+    "static/media/CharliePicture.jpeg": "/portfolio/static/media/CharliePicture.17818cccd8636a6d8922.jpeg",
+    "static/media/TransformerBar.jpeg": "/portfolio/static/media/TransformerBar.287daca9024c8aa0799b.jpeg",
+    "static/media/Hex.png": "/portfolio/static/media/Hex.c0fe54d64f61f0afb211.png",
+    "static/media/UCSC.png": "/portfolio/static/media/UCSC.fb63f17dcb0833763d62.png",
+    "static/media/Rogue.jpeg": "/portfolio/static/media/Rogue.64f468e969f07de5b83c.jpeg",
+    "static/media/OhioState.png": "/portfolio/static/media/OhioState.057a8e8c7f3829c5c414.png",
+    "index.html": "/portfolio/index.html",
+    "main.f9e1a03e.css.map": "/portfolio/static/css/main.f9e1a03e.css.map",
+    "main.c1e4f146.js.map": "/portfolio/static/js/main.c1e4f146.js.map",
+    "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f9e1a03e.css",
+    "static/js/main.c1e4f146.js"
+  ]
+}
