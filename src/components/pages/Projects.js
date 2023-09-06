@@ -5,7 +5,7 @@ import Section from "../Section";
 import hex from "../../pictures/Hex.png";
 import reactLogo from "../../pictures/ReactLogo.png";
 
-// TEST CHANGE
+// We Are Testing
 function Projects() {
   return (
     <Grid 
