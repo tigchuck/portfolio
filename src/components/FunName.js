@@ -37,7 +37,7 @@ function FunName() {
                         <Grow 
                             in={grow} 
                             timeout={{
-                                enter: 1000,
+                                enter: 2000,
                             }}
                             onEntered={() => {
                                 setSlide1(true);

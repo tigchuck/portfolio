@@ -1,12 +1,11 @@
 import React from 'react';
 import Grid from '@mui/material/Grid';
-import IconButton from '@mui/material/IconButton';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import CardMedia from '@mui/material/CardMedia';
 import Paper from '@mui/material/Paper';
-import Fab from '@mui/material/Fab';
 import FunName from "../FunName";
+import Button from "../Button";
 import charlie from "../../pictures/CharliePicture.jpeg";
 
 
@@ -40,38 +39,56 @@ function Home() {
                 <Grid 
                     contianer
                     flexDirection="column"
+                    paddingTop="64px"
                 >
                     <Grid item>
-                        <Fab
-                            variant="extended"
+                        <Button 
+                            linkText="Contact Me!"
                             href="/contact"
-                            sx={{
-                                fontFamily: "Abel",
-                                fontSize: "16px",
-                                margin: "32px auto",
-                                display: "flex",
-                                width: "0.25",
-                                minWidth: "250px"
-                            }}
-                        >
-                            Contact Me!
-                        </Fab>
+                            elevation="5"
+                            backgroundColor="#1d2951"
+                            color="#F0EAD6"
+                            hoverBackgroundColor="#2a3c77"
+                            minWidth="250px"
+                        />
                     </Grid>
                     <Grid item>
-                        <Grid container flexDirection="row">
+                        <Grid 
+                            container 
+                            flexDirection="row"
+                            justifyContent="center"
+                            alignItems="center"
+                            spacing={10}
+                        >
                             <Grid item>
-                                <IconButton href="https://github.com/tigchuck">
-                                    <GitHubIcon 
-                                        fontSize="large" 
-                                    />
-                                </IconButton>
+                                <Button 
+                                    variant="circular"
+                                    linkIcon={<GitHubIcon fontSize="large"/>}
+                                    href="https://github.com/tigchuck"
+                                    elevation="0"
+                                    backgroundColor="#F0EAD6"
+                                    hoverBackgroundColor="#F0EAD6"
+                                    color="#1d2951"
+                                    hoverColor="#2a3c77"
+                                    height="75px"
+                                    width="100%"
+                                    aspectRatio="1.0"
+                                />
                             </Grid>
                             <Grid item>
-                                <IconButton href="https://www.linkedin.com/in/charlie-tighe-2b0062136/">
-                                    <LinkedInIcon 
-                                        fontSize="large" 
-                                    />
-                                </IconButton>
+                                <Button 
+                                    variant="circular"
+                                    linkIcon={<LinkedInIcon fontSize="large"/>}
+                                    href="https://www.linkedin.com/in/charlie-tighe-2b0062136/"
+                                    elevation="0"
+                                    backgroundColor="#F0EAD6"
+                                    hoverBackgroundColor="#F0EAD6"
+                                    color="#1d2951"
+                                    hoverColor="#2a3c77"
+                                    height="75px"
+                                    width="100%"
+                                    aspectRatio="1.0"
+                                />
                             </Grid>
                         </Grid>
                     </Grid>
