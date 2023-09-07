@@ -1,5 +1,5 @@
-import React from 'react';
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import{ React } from 'react';
+import { Routes, Route } from 'react-router-dom';
 import Header from './Header';
 import HeaderBlock from './HeaderBlock';
 import Footer from './Footer';
@@ -12,27 +12,6 @@ import Rogue from './pages/Rogue';
 import OnlineCourseCertificates from './pages/OnlineCourseCertificates';
 import '../styles/App.css';
 
-// const router = createHashRouter([
-//   {
-//     path: "/",
-//     element: <Home />,
-//     children: [
-//       {
-//         path: "/contact/", 
-//         element: <Contact />,
-//       },
-//       {
-//         path: "/education",
-//         element: <Education />
-//       },
-//       {
-//         path: "/experience",
-//         element: <Experience />
-//       }
-//     ],
-//   }
-// ]);
-
 
 function App() {
   return (
@@ -41,12 +20,12 @@ function App() {
       <HeaderBlock />
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route exact path="contact" element={<Contact />} />
-          <Route exact path="education" element={<Education />} />
-          <Route exact path="experience" element={<Experience />} />
-          <Route exact path="projects" element={<Projects />} />
-          <Route exact path="rogue-fitness" element={<Rogue />} />
-          <Route exact path="online-course-certificates" element={<OnlineCourseCertificates />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/education" element={<Education />} />
+          <Route path="/experience" element={<Experience />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/rogue-fitness" element={<Rogue />} />
+          <Route path="/online-course-certificates" element={<OnlineCourseCertificates />} />
         </Routes>
       <Footer />
     </div>
