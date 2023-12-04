@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.f9e1a03e.css",
-    "main.js": "/portfolio/static/js/main.92ee006d.js",
+    "main.js": "/portfolio/static/js/main.56e80d44.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/PowerblockCart.png": "/portfolio/static/media/PowerblockCart.17037fcac91c624486a9.png",
     "static/media/HipThruster.png": "/portfolio/static/media/HipThruster.a0e371515af3557b7c38.png",
@@ -23,17 +23,18 @@
     "static/media/ReactLogo.png": "/portfolio/static/media/ReactLogo.e648a71158884495e955.png",
     "static/media/CharliePicture.jpeg": "/portfolio/static/media/CharliePicture.17818cccd8636a6d8922.jpeg",
     "static/media/TransformerBar.jpeg": "/portfolio/static/media/TransformerBar.287daca9024c8aa0799b.jpeg",
+    "static/media/StockMarket.jpeg": "/portfolio/static/media/StockMarket.6304ac3c68f9e859cdd7.jpeg",
     "static/media/Hex.png": "/portfolio/static/media/Hex.c0fe54d64f61f0afb211.png",
     "static/media/UCSC.png": "/portfolio/static/media/UCSC.fb63f17dcb0833763d62.png",
     "static/media/Rogue.jpeg": "/portfolio/static/media/Rogue.64f468e969f07de5b83c.jpeg",
     "static/media/OhioState.png": "/portfolio/static/media/OhioState.057a8e8c7f3829c5c414.png",
     "index.html": "/portfolio/index.html",
     "main.f9e1a03e.css.map": "/portfolio/static/css/main.f9e1a03e.css.map",
-    "main.92ee006d.js.map": "/portfolio/static/js/main.92ee006d.js.map",
+    "main.56e80d44.js.map": "/portfolio/static/js/main.56e80d44.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f9e1a03e.css",
-    "static/js/main.92ee006d.js"
+    "static/js/main.56e80d44.js"
   ]
 }

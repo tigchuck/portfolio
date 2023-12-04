@@ -26,9 +26,9 @@ function Projects() {
         >
             <Section
                 title="Stock Trading Q-Learner"
-                subtitle=""
+                subtitle="Technical Analysis Based Stock Trading Bot"
                 img={stockMarket}
-                alt="Technical Analysis Based Stock Trading Bot"
+                alt="Stock Trading Q-Learner"
                 imgBorderRadius="10px"
                 imgWidth="0.8"
                 infoList={[
@@ -37,7 +37,10 @@ function Projects() {
                         ["Pandas Library used to track and manage stock information.", ""],
                         ["Source code available to view upon request.", ""],
                 ]}
-                link="false"
+                link="true"
+                linkIcon=<GitHubIcon sx={{ mr: 2 }}/>
+                linkText="Repo Access Reqeust"
+                href="/contact"
             />
         </Grid>
         <Grid 
