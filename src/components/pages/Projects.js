@@ -4,6 +4,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import Section from "../Section";
 import hex from "../../pictures/Hex.png";
 import reactLogo from "../../pictures/ReactLogo.png";
+import stockMarket from "../../pictures/StockMarket.jpeg";
 
 // We Are Testing
 function Projects() {
@@ -14,6 +15,31 @@ function Projects() {
         justifyContent="flex-start" 
         spacing={5}
     >
+        <Grid 
+            item                
+            sx={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                width: 1
+            }}
+        >
+            <Section
+                title="Stock Trading Q-Learner"
+                subtitle=""
+                img={stockMarket}
+                alt="Technical Analysis Based Stock Trading Bot"
+                imgBorderRadius="10px"
+                imgWidth="0.8"
+                infoList={[
+                        ["Written in Python.", ""],
+                        ["Numpy Library used to implement Q-Learner efficiently.", ""],
+                        ["Pandas Library used to track and manage stock information.", ""],
+                        ["Source code available to view upon request.", ""],
+                ]}
+                link="false"
+            />
+        </Grid>
         <Grid 
             item                
             sx={{

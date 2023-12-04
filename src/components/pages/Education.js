@@ -73,7 +73,7 @@ function Education() {
                     imgBorderRadius="10px"
                     imgWidth="0.8"
                     infoList={[
-                            ["Created my own pseudo computer science cirriculum using a several of online learning platforms.", ""],
+                            ["Created my own pseudo computer science cirriculum using several of online learning platforms.", ""],
                             ["Learned several programming languages, frameworks, and completed a variety of projects as part of coursework.", ""],
                             ["Used this collection of knowledge and skills to aid in admission to the M.S. in Computer Science program at Georgia Tech, where I am now enrolled as a student.", ""]
                     ]}
